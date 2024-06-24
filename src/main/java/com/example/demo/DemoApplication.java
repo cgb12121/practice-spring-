@@ -2,7 +2,7 @@ package com.example.demo;
 
 import com.example.demo.Repository.CharacterInfoRepository;
 import com.example.demo.Repository.EquipmentRepository;
-import com.example.demo.RestController.CharacterInfoController;
+import com.example.demo.api.controller.CharacterInfoController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -26,10 +26,10 @@ public class DemoApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) {
-//		equipmentRepository.findByName("Wooden Sword").forEach(val -> System.out.println(val.getName()));
-//		equipmentRepository.findAll().forEach(System.out::println);
-//
-//		characterInfoRepository.findAll().forEach(System.out::println);
+		equipmentRepository.findById(1);
+		equipmentRepository.findAll().forEach(System.out::println);
+
+		characterInfoRepository.findAll().forEach(System.out::println);
 
 		System.out.println(characterInfoController.getAllCharacterInfos());
 	}

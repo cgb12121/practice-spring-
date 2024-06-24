@@ -1,9 +1,9 @@
-package com.example.demo.RestController;
+package com.example.demo.api.controller;
 
-import com.example.demo.Entity.CharacterInfo;
-import com.example.demo.Service.CharacterInfoService;
+import com.example.demo.service.CharacterInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.example.demo.model.Entity.*;
 
 import java.util.List;
 

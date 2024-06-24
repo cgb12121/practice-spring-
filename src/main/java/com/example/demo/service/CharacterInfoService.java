@@ -1,6 +1,6 @@
-package com.example.demo.Service;
+package com.example.demo.service;
 
-import com.example.demo.Entity.CharacterInfo;
+import com.example.demo.model.Entity.CharacterInfo;
 import com.example.demo.Repository.CharacterInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

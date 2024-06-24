@@ -1,7 +1,7 @@
-package com.example.demo.RestController;
+package com.example.demo.api.controller;
 
-import com.example.demo.Entity.Equipment;
-import com.example.demo.Service.EquipmentService;
+import com.example.demo.model.Entity.Equipment;
+import com.example.demo.service.EquipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
